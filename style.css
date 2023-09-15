@@ -15,10 +15,42 @@
 .icon-h1 {
     margin-left: 170px;
     padding: 30px;
+    display: flex;
 }
 
 .icon-h1 h3 {
     color: aliceblue;
+    font-size: xx-large;
+}
+
+.icon-h1 a {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: 700;
+    height: auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.contact {
+    display: flex;
+    width: 75%;
+    justify-content: right;
+}
+
+.contact-container {
+    text-align: center;
+    border: 1px solid rgb(73, 73, 73);
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.contact-container:hover {
+    background-color: #969595;
+    transform: translate(1.2);
 }
 
 .container-lp {
@@ -144,7 +176,7 @@
 }
 
 .container-gallery{
-    height: 200vh;
+    height: 270vh;
     background-color: black;
 }
 
@@ -168,6 +200,7 @@
 .grid img {
     height: 251px;
     margin-top: 67px;
+    cursor: pointer;
 }
 
 .grid {
@@ -176,6 +209,10 @@
     margin-left: 20px;
 }
 
+div.lexus,
+div.audi,
+div.mercGT,
+div.mercSL,
 div.jaguar,
 div.alpine,
 div.corvette,
@@ -185,19 +222,16 @@ div.p911 {
     width: 421px;
 }
 
-img:hover {
-    animation: try 2s forwards;
-    text-align: center;
-}
-
-@keyframes try {
-    from {scale: 1.2;}
-    to {scale: 2;}
-}
-
 span {
     font-weight: bolder;
     text-align: left;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+span:hover {
+    color: violet;
+    transform: translate(1.2);
 }
 
 .desc {
@@ -205,34 +239,106 @@ span {
     font-size: smaller;
 }
 
-/* @media only screen and (max-width: 1300px)
-{
-    html, body{
-      width: 100vw;
-    }
+.section-contact {
+    height: 70vh;
+    background-color: #969595;
+}
 
-    div.background {
-        width: 100vw;
-    }
+div.contact-h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 35px;
+}
 
-    .hp{
-        margin-right: 500px;
-    }
+div.contact-h1 h1 {
+    font-family: serif;
+}
 
-    .grid {
-        margin-left: 40px;
-    }
+.media {
+    text-align: center;
+}
 
-    .grid div img {
-        height: 250px;
-    }
+.social {
+    display: grid;
+    grid: auto / auto auto auto;
+    margin-top: 50px;
+    margin-left: 223px;
+}
 
-    div.jaguar,
-    div.alpine,
-    div.corvette,
-    div.lotus,
-    div.p718,
-    div.p911 {
-    width: 370px;
-    }
-} */
+.social-icon img {
+    height: 50px;
+}
+
+.social-h {
+    margin-top: 15px;
+}
+
+.social-h h2 {
+    text-decoration: underline;
+}
+
+.renz-name {
+    margin-top: 35px;
+}
+
+.adrian-name {
+    margin-top: 35px;
+}
+
+.email {
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.email:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+.case {
+    text-align: center;
+    width: 190px;
+}
+
+.case-icon img {
+    height: 50px;
+}
+
+.case-h {
+    margin-top: 15px;
+}
+
+.case-h h2 {
+    text-decoration: underline;
+}
+
+.case-p {
+    margin-top: 25px;
+}
+
+.case-a {
+    margin-top: 35px;
+}
+
+.case-a-button {
+    height: 40px;
+    background-color: rgb(194, 194, 194);
+    transition: all 0.5s;
+}
+
+.case-a-button:hover {
+    background-color: rgb(243, 243, 243);
+    transform: translate(1.2);
+}
+
+.case-a .case-a-button a {
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+    height: 39px;
+    width: 189px;
+    align-items: center;
+    justify-content: space-around;
+}
