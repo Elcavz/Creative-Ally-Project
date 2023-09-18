@@ -5,97 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Ally</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon/icon.png">
 </head>
 <body>
-    <div class="background">
-        <div class="icon-h1">
-            <h3>Creative Ally</h3>
-            <div class="contact">
-                <div class="contact-container">
-                    <a href="#contact">Contact Us</a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".nav-fixed");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <div id="home" class="background">
+        <div class="nav-fixed">
+            <div class="icon-h1">
+                <div class="icon-png">
+                    <img src="images/icon/icon.png" alt="">
+                </div>
+                <h3><a class="logo" href="#home"><span class="icon-h1-span">C</span>reative <span class="icon-h1-span">A</span>lly</a></h3>
+                <div class="contact">
+                    <div class="contact-container">
+                        <a class="contact-a" href="#contact">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container-lp">
             <div class="div-h1-lp">
-                <div class="blur"></div>
-                <h1>We Provide Car Services</h1>
-                <div class="hp">
-                    <p>We are your one-stop shop for complete auto care for every make and model of vehicle</p>
-                </div>
-                <div class="text-box">
-                    <a href="#gallery" class="btn btn-white btn-animate">click me</a>
+                <div class="div-h1-lp-text-align">
+                    <br><br><br><br><br><br><br><br><br>
+                    <h1>We Are</h1>
+                    <h1>Qualified &</h1>
+                    <h1>Professional.</h1>
+                    <div class="text-box">
+                        <div class="text-box-a">
+                        <a href="#gallery" class="lp-button">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="info">
+        <div class="grid-info">
+            <div class="info-p1">
+                <p>Satisfaction <br> Guaranteed Or Your <br> Dent Back.</p>
+            </div>
+            <div class="info-p2">
+                <p>Caring For Your Car <br> The Way You Would.</p>
+            </div>
+            <div class="info-img">
 
+            </div>
+        </div>
+    </div>
     <div id="gallery" class="container-gallery">
         <div class="div-h1-gallery">
             <h1>Car Gallery</h1><br>
             <div class="line">
                 <div class="line-gallery"></div>
             </div>
-            <div class="grid">
-                <div class="p911">
-                    <img src="images/gallery/car1.webp" alt="">
-                    <h3>Porsche 911</h3>
-                    <br><p class="desc">The derivative range of Porsche's latest-generation 911 (the 992) has filled out quite a bit since its introduction in 2019.</p>
-                    <span>Continue Reading ...</span>
+            <div class="container">
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car1.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Porsche 911</h3>
+                            <br><p class="desc">The derivative range of Porsche's latest-generation 911 (the 992) has filled out quite a bit since its introduction in 2019.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="p718">
-                    <img src="images/gallery/car2.webp" alt="">
-                    <h2>Porsche 718 Cayman GTS 4.0</h2>
-                    <br><p class="desc">Yes, it's a Porsche one-two at the top of the charts. The German firm really knows what it's doing when it comes to screwing together a sensational sports car.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car2.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3> Porsche 718 Cayman GTS 4.0</h3>
+                            <br><p class="desc">A Porsche one-two at the top of the charts. The German firm really knows what it's doing when it comes to screwing together a sensational sports car.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="lotus">
-                    <img src="images/gallery/car3.webp" alt="">
-                    <h2>Lotus Emira</h2>
-                    <br><p class="desc">The last hurrah for ICE power at Lotus, the all-new Emira certainly has a lot resting on its shoulders. </p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car3.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Lotus Emira</h3>
+                            <br><p class="desc">The last hurrah for ICE power at Lotus, the all-new Emira certainly has a lot resting on its shoulders. And the good news is that the Norfolk newcomer gets so much right.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="corvette">
-                    <img src="images/gallery/car4.webp" alt="">
-                    <h2>Chevrolet Corvette</h2>
-                    <br><p class="desc">Much has been written about General Motors' decision to gamble with this, the eighth generation of its iconic Chevrolet Corvette sports car, by switching from a front-mounted engine to a mid-mounted one.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car4.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Chevrolet Corvette</h3>
+                            <br><p class="desc">Much has been written about General Motors' decision to gamble with this, the eighth generation of its iconic Chevrolet Corvette sports car, by switching from a front-mounted engine to a mid-mounted one. </p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="alpine">
-                    <img src="images/gallery/car5.webp" alt="">
-                    <h2>Alpine A110 R</h2>
-                    <br><p class="desc">The standard Alpine A110 already appears in our list of affordable sports cars, but the recently launched R model is an altogether more serious proposition.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car5.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Alpine A110 R</h3>
+                            <br><p class="desc">The standard Alpine A110 already appears in our list of affordable sports cars, but the recently launched R model is an altogether more serious proposition.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="jaguar">
-                    <img src="images/gallery/car6.webp" alt="">
-                    <h2>Jaguar F-Type</h2>
-                    <br><p class="desc">Nearly a decade after its debut, the Jaguar F-Type is beginning its farewell tour. Jaguar has announced its flagship sports car will die at the end of 2023, with no direct replacement in the pipeline.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car6.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Jaguar F-Type</h3>
+                            <br><p class="desc">Nearly a decade after its debut, the Jaguar F-Type is beginning its farewell tour. Jaguar has announced its flagship sports car will die at the end of 2023.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="mercSL">
-                    <img src="images/gallery/car7.webp" alt="">
-                    <h2>Mercedes-AMG SL</h2>
-                    <br><p class="desc">Over the years, the Mercedes-Benz SL has swung between out-and-out sports car and sunshine-seeking cruiser, but with this latest seventh iteration, the drop-top two-seater is aiming to be more of the former and less of the latter. </p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car7.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Mercedes-AMG SL</h3>
+                            <br><p class="desc">Over the years, the Mercedes-Benz SL has swung between out-and-out sports car and sunshine-seeking cruiser, but with this latest seventh iteration.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="mercGT">
-                    <img src="images/gallery/car8.webp" alt="">
-                    <h2>Mercedes-AMG GT</h2>
-                    <br><p class="desc">With the spaceframe body structure of a supercar, a front-mounted engine from a muscle saloon, suspension tuned for maximum attack on the track.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car8.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Mercedes-AMG GT</h3>
+                            <br><p class="desc">With the spaceframe body structure of a supercar, a front-mounted engine from a muscle saloon, suspension tuned for maximum attack on the track and yet the practicality.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="audi">
-                    <img src="images/gallery/car9.webp" alt="">
-                    <h2>Audi TT RS</h2>
-                    <br><p class="desc">Like the F-Type sitting a little higher up this list, the Audi TT RS is living on borrowed time. Audi has revealed that the curtain will be drawn down over the eye-catching coupé at the end of 2023, a quarter of a century after the original made its debut.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car9.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Audi TT RS</h3>
+                            <br><p class="desc">Like the F-Type sitting a little higher up this list, the Audi TT RS is living on borrowed time. Audi has revealed that the curtain will be drawn down over the eye-catching coupé at the end of 2023.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="lexus">
-                    <img src="images/gallery/car10.webp" alt="">
-                    <h2>Lexus LC 500</h2>
-                    <br><p class="desc">As a keen driver, you feel inclined to make a case for the Lexus LC 500. It has a superbly charismatic and likeable V8 engine, while balanced, spry, involving handling makes it feel.</p>
-                    <span>Continue Reading ...</span>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car10.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Lexus LC 500</h3>
+                            <br><p class="desc">As a keen driver, you feel inclined to make a case for the Lexus LC 500. It has a superbly charismatic and likeable V8 engine, while balanced, spry, involving handling makes it feel.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car11.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>2024 Ford Mustang</h3>
+                            <br><p class="desc">The new Mustang comes standard with an upgraded turbocharged 315-hp 2.3-liter four-cylinder EcoBoost engine with 350 pound-feet of torque.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacing">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/gallery/car12.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Lamborghini Aventador</h3>
+                            <br><p class="desc">The Lamborghini Aventador is one of the most exotic-looking cars in the world, and its final form roars into the sunset in limited numbers with a 769-hp V-12.</p>
+                            <span>Continue Reading ...</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
